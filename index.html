@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="asset/style.css">
+
+    <!--fontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--navbar-->
+    <nav class="navbar">
+        <h2 class="logo">KawanConvo</h2>
+        <ul class="navlist">
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1>WELCOME!</h1>
+            <div class="line"></div>
+            <p><i>Disini, bot KawanConvo akan menjadi partner belajar percakapan bahasa Inggris!</i></p>
+            <br>
+            <div class="rules">
+                <p><b>Rules:</b><br>
+                - Pastikan tidak ada <b>Typo</b> saat me-reply<br>
+            - Ketik balasan seperti yang ada didalam tanda kurung () dan tanda petik dua ".."</p><br>
+            </div>
+        </div>
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+                <df-messenger
+                    chat-icon="https:&#x2F;&#x2F;i.pinimg.com&#x2F;originals&#x2F;62&#x2F;aa&#x2F;1b&#x2F;62aa1b84788ab8b3cfc55c15f621dfcd.png"
+                    intent="WELCOME"
+                    chat-title="KawanConvo"
+                    agent-id="2ad8fad4-294b-4091-be57-6cd02a5ee7f0"
+                    language-code="en">
+                </df-messenger>
+    </header>
+
+    <footer>
+        <p>&#169;2023 - Resa Arfita H</p>  
+    </footer>
+
+</body>
+</html>
